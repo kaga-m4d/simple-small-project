@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Toggle Button [Light / dark theme]</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="buttonBox">
+      <div class="button"></div>
+    </div>
+
+    <main></main>
+  </body>
+</html>
+
+<script>
+  let buttonBox = document.querySelector(".buttonBox");
+  let button = document.querySelector(".button");
+
+  buttonBox.addEventListener("click", function () {
+    button.classList.toggle("click");
+    buttonBox.classList.toggle("active");
+  });
+</script>
